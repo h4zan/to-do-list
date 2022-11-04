@@ -9,6 +9,10 @@
   width: 400px;
 }
 
+.taskWrapper {
+  margin-bottom: 15px;
+}
+
 input {
   border: variables.$button-border solid 2px;
   border-radius: 25px;
@@ -29,15 +33,6 @@ input::placeholder {
   outline: none;
 }
 
-.addTask {
-  margin: 8px;
-  padding: 5px;
-}
-.clearAll {
-  margin: 8px;
-  padding: 5px;
-}
-
 ul {
   border: variables.$button-border solid 2px;
   border-radius: 25px;
@@ -49,20 +44,16 @@ ul {
 
 li:before {
   //content: "✔";
-  font-size: 20px;
+  content: "♥";
+  font-size: 15px;
   padding-bottom: 3px;
 }
 .list {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
   flex-wrap: nowrap;
   word-break: break-all;
   flex: 1;
-}
-
-.deleteTask {
-  margin-right: 7px;
-  border-radius: 50%;
 }
