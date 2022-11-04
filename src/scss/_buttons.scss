@@ -1,0 +1,14 @@
+@use "variables";
+
+button {
+  background-color: variables.$button-background;
+  border: variables.$button-border solid 2px;
+  color: variables.$background-color;
+  border-radius: 7px;
+}
+
+.addTask {
+  margin: 8px;
+  padding: 5px;
+  //margin-left: 150px;
+}

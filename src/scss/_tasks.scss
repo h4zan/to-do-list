@@ -1,0 +1,68 @@
+@use "variables";
+
+.taskWrapper,
+.taskcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 400px;
+}
+
+input {
+  border: variables.$button-border solid 2px;
+  border-radius: 25px;
+  background-color: variables.$background-color;
+  margin: 6px;
+}
+
+.userinput {
+  padding: 5px;
+}
+
+input::placeholder {
+  color: variables.$text-color;
+  background-color: variables.$background-color;
+  font-weight: bold;
+}
+*:focus {
+  outline: none;
+}
+
+.addTask {
+  margin: 8px;
+  padding: 5px;
+}
+.clearAll {
+  margin: 8px;
+  padding: 5px;
+}
+
+ul {
+  border: variables.$button-border solid 2px;
+  border-radius: 25px;
+  padding: 3px;
+  margin: 5px;
+  background-color: variables.$task-background;
+  list-style: none;
+}
+
+li:before {
+  //content: "✔";
+  font-size: 20px;
+  padding-bottom: 3px;
+}
+.list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: nowrap;
+  word-break: break-all;
+  flex: 1;
+}
+
+.deleteTask {
+  margin-right: 7px;
+  border-radius: 50%;
+}

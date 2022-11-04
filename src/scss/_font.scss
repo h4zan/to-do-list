@@ -1,0 +1,7 @@
+@use "variables";
+
+body {
+  font-size: 25px;
+  font-family: "Times New Roman", Times, arial, serif;
+  color: variables.$text-color;
+}
