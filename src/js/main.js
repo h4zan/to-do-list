@@ -45,6 +45,7 @@ addTask.addEventListener("click", function () {
   } else {
     task.push(new Todos(userinput.value, false));
     createHtml();
+    userinput.value = "";
   }
 });
 
