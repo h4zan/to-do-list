@@ -1,0 +1,60 @@
+/** @format */
+
+@use 'variables';
+@use 'mixins';
+
+button {
+  cursor: pointer;
+  color: variables.$primary-color;
+  border: variables.$primary-color solid 1px;
+  margin-left: 0.5rem;
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+  background-color: variables.$background-color;
+  box-shadow: 3px 3px 4px variables.$borderDark,
+    -3px -3px 4px variables.$borderLight;
+  text-shadow: 0.01px 0.01px 0.1px variables.$secondary-color,
+    0.01px 0.01px 0.1px variables.$secondary-color,
+    0.01px 0.01px 0.1px variables.$secondary-color,
+    0.01px 0.01px 0.1px variables.$secondary-color;
+}
+
+.addTask,
+.clearAll {
+  margin: 4px;
+  padding: 5px;
+  margin-bottom: 1rem;
+
+  @include mixins.tablet {
+    padding: 8px;
+  }
+
+  @include mixins.desktop {
+    padding: 10px;
+  }
+}
+
+.deleteTask::before {
+  content: '\1F5D1';
+  font-size: 1.3rem;
+  color: variables.$primary-color;
+  background-color: variables.$background-color;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.taskFinished,
+.deleteTask {
+  padding: 0.5rem;
+}
+
+.taskFinished::before {
+  content: '\2714';
+  color: variables.$primary-color;
+  font-size: 1.2rem;
+}

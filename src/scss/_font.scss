@@ -1,0 +1,13 @@
+/** @format */
+
+@use 'variables';
+@use 'mixins';
+
+body {
+  line-height: 35px;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif, arial,
+    Verdana, 'Times New Roman', Times, arial, serif;
+  color: #7755c7;
+}
